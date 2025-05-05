@@ -1,0 +1,16 @@
+{
+  "name": "@workspace/ts-config",
+  "version": "0.0.0",
+  "private": true,
+  "license": "PROPRIETARY",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    "./base": "./base.json",
+    "./react-library": "./react-library.json"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
