@@ -1,0 +1,39 @@
+{
+  "name": "@workspace/shadcn-ui",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "ui": "pnpm dlx shadcn@latest",
+    "lint": "eslint .",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "lucide-react": "^0.475.0",
+    "react": "^19.0.0",
+    "tailwind-merge": "^3.0.1",
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/ts-config": "workspace:*",
+    "@workspace/tailwind-config": "workspace:*",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.5",
+    "@tailwindcss/postcss": "^4.1.5",
+    "typescript": "^5.7.3"
+  },
+  "exports": {
+    "./globals.css": "./src/styles/globals.css",
+    "./lib/*": "./src/lib/*.ts",
+    "./hooks/*": "./src/hooks/*.ts",
+    "./tailwind/": "./tailwind.config.js",
+    "./components/*": {
+      "import": "./src/components/*.tsx"
+    }
+  }
+}

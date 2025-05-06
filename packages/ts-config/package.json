@@ -2,13 +2,25 @@
   "name": "@workspace/ts-config",
   "version": "1.0.0",
   "private": true,
-  "license": "PROPRIETARY",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "exports": {
-    "./base": "./base.json",
-    "./react-library": "./react-library.json"
+    ".": {
+      "import": "./tsconfig.json",
+      "require": "./tsconfig.json",
+      "default": "./tsconfig.json"
+    },
+    "./base": {
+      "import": "./tsconfig.json",
+      "require": "./tsconfig.json",
+      "default": "./tsconfig.json"
+    },
+    "./react": {
+      "import": "./tsconfig.react.json",
+      "require": "./tsconfig.react.json"
+    }
   },
   "peerDependencies": {
     "typescript": "^5.8.3"

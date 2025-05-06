@@ -1,0 +1,19 @@
+{
+  "name": "@workspace/tailwind-config",
+  "version": "1.0.0",
+  "exports": {
+    ".": "./presets/index.js"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^4.1.5",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.4.1"
+}
