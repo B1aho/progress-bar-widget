@@ -1,0 +1,1 @@
+export { setWidget } from "./mount";
