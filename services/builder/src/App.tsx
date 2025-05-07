@@ -1,15 +1,12 @@
-import { Input } from '@workspace/shadcn-ui/components/input'
-import './App.css'
-import { Button } from '@workspace/shadcn-ui/components/button'
+import { Preview } from './features/online-preview/Preview'
+import { OptionMenu } from './features/option-menu/OptionMenu'
 
 function App() {
   return (
-    <>
-      <div>
-        <Button variant="ghost">LINK</Button>
-      </div>
-      <Input type='email' placeholder='Email' />
-    </>
+    <div className='w-full h-full flex'>
+      <OptionMenu />
+      <Preview />
+    </div>
   )
 }
 

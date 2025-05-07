@@ -8,7 +8,7 @@ export interface IWidgetConfig {
 }
 
 const defaultConfig: IWidgetConfig = {
-    height: 4,
+    height: 10,
     bg: '#515151',
     color: '#83BF46',
 };
