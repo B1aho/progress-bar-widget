@@ -20,7 +20,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": [ "**/*.{ts,js,tsx,jsx}"],
+  "include": [ "**/*.tsx", "**/*.ts"],
   "exclude": ["node_modules"],
   "files": []
 }
