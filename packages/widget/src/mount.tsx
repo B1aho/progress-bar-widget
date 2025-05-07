@@ -1,4 +1,4 @@
-import { createRoot } from "react-dom/client";
+import { createRoot, Root } from "react-dom/client";
 import { ReadingBar } from "./ReadingBar";
 
 export interface IWidgetConfig {
@@ -13,6 +13,7 @@ const defaultConfig: IWidgetConfig = {
     color: '#83BF46',
 };
 
+let root: Root | null = null;
 /**
  * Функция которая встраивает виджет - запускает в loader-слое
  * @param container - Контейнер куда встраиваем наш виджет
@@ -23,11 +24,16 @@ export function setWidget(container: HTMLElement, config: IWidgetConfig): void {
         ...defaultConfig,
         ...config
     }
-    // Очищаем контейнер и готовим к монтированию
-    container.innerHTML = '';
-    container.style.position = 'relative';
 
-    const root = createRoot(container);
+    // Если root ещё не создан — создаём его один раз
+    if (!root) {
+        // Очищаем контейнер при первом монтировании
+        container.innerHTML = "";
+        container.style.position = "relative";
+
+        root = createRoot(container);
+    }
+
     root.render(<ReadingBar {...widgetConfig} />);
 }
 

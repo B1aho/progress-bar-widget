@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "start": "turbo dev --parallel --continue",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",

@@ -161,6 +161,9 @@ importers:
       '@workspace/shadcn-ui':
         specifier: workspace:*
         version: link:../../packages/shadcn-ui
+      '@workspace/widget':
+        specifier: workspace:*
+        version: link:../../packages/widget
       lucide-react:
         specifier: ^0.475.0
         version: 0.475.0(react@19.1.0)
@@ -216,8 +219,6 @@ importers:
       vite:
         specifier: ^6.2.0
         version: 6.3.5(@types/node@20.17.43)(jiti@2.4.2)(lightningcss@1.29.2)
-
-  services/preview: {}
 
   services/server: {}
 
