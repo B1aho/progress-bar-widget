@@ -37,11 +37,3 @@ export function setWidget(container: HTMLElement, config: IWidgetConfig): void {
     root.render(<ReadingBar {...widgetConfig} />);
 }
 
-/**
- *  Добавить функцию update, которая обновляет уже встроенный виджет (для preview)
- * 
- * Получается, что потом созданная пользователем конфиг в buildere передается и в preview для update
- * И на сервер для сохранения
- * 
- * В дальнейшем продакшен лоадер скрипт в cdn будет брать именно сохраненный на сервере конфиг 
- */
